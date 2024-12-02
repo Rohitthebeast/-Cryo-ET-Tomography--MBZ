@@ -10,7 +10,6 @@ These coordinates are mapped onto a 3D grid, where each atom contributes to the 
 The density map is saved in the MRC file format, which is commonly used for storing 3D electron density maps.
 2. Simulating Tomograms:
 Generate Tomogram (generate_tomogram):
-
 Purpose: To generate 2D projections of the 3D density map at different tilt angles, simulating the tomogram.
 Steps:
 The 3D density map is rotated according to specified tilt angles.
@@ -19,6 +18,7 @@ The projection is processed to simulate electron interactions and the applicatio
 Noise Addition (add_noise):
 
 Purpose: Placeholder function intended to add noise to the simulated tomograms, though it’s not implemented in the current code.
+
 3. Reconstructing and Visualizing the Tomogram:
 Reconstruct Tomogram (reconstruct_tomogram):
 Purpose: Placeholder function for reconstructing the tomogram from 2D projections. It currently returns the input tomogram as-is.
@@ -26,6 +26,7 @@ Visualize Tomogram (visualize_tomogram):
 Purpose: Displays slices of the reconstructed tomogram using Matplotlib.
 Steps:
 Extracts slices from the 3D tomogram and displays them as 2D images.
+
 4. Simulating Cryo-ET (simulate_cryo_et):
 Purpose: This is the main function that ties everything together, simulating a series of cryo-ET tomograms from a PDB file.
 Steps:
