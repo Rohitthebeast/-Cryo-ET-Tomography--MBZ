@@ -19,7 +19,7 @@ def load_pickle_in_batches(file_path, batch_size):
 # Example usage
 if __name__ == "__main__":
     file_path = 'C:/Users/rohit/OneDrive/Desktop/Research MBZUAI/2000_30_01.pickle'
-    batch_size = 32  # Adjust the batch size as needed
+    batch_size = 32  
 
     for batch in load_pickle_in_batches(file_path, batch_size):
         print(f"Loaded batch of size: {len(batch)}")
