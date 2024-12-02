@@ -2,8 +2,8 @@ import pickle
 
 def load_subset(file_path, subset_size):
     try:
-        with open(file_path, 'rb') as f:  # Ensure binary mode
-            data = pickle.load(f)  # Load the pickle file
+        with open(file_path, 'rb') as f:  
+            data = pickle.load(f) 
 
         if isinstance(data, list) or isinstance(data, tuple):
             return data[:subset_size]
@@ -25,9 +25,9 @@ def load_subset(file_path, subset_size):
         print(f"An unexpected error occurred: {e}")
         return None
 
-# Path to your pickle file
+
 file_path = 'C:/Users/rohit/OneDrive/Desktop/Research MBZUAI/2000_30_01.pickle'
-subset_size = 1000  # Adjust the subset size as needed
+subset_size = 1000 
 
 subset_data = load_subset(file_path, subset_size)
 
