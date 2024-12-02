@@ -8,8 +8,7 @@ class CryoETPickleDataset(Dataset):
         self.transform = transform
 
         with open(file_path, 'rb') as handle:
-            self.data = pickle.load(handle, encoding='latin1')  # Specify the correct encoding
-
+            self.data = pickle.load(handle, encoding='latin1')  
     def __len__(self):
         return len(self.data)
 
