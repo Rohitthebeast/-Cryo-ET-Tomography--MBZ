@@ -16,9 +16,7 @@ The 3D density map is rotated according to specified tilt angles.
 A projection is generated using the weak_projection_theorem (placeholder for a physical simulation).
 The projection is processed to simulate electron interactions and the application of a Contrast Transfer Function (CTF).
 Noise Addition (add_noise):
-
 Purpose: Placeholder function intended to add noise to the simulated tomograms, though it’s not implemented in the current code.
-
 3. Reconstructing and Visualizing the Tomogram:
 Reconstruct Tomogram (reconstruct_tomogram):
 Purpose: Placeholder function for reconstructing the tomogram from 2D projections. It currently returns the input tomogram as-is.
