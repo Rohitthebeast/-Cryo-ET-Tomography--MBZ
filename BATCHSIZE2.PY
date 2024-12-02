@@ -30,9 +30,9 @@ if __name__ == "__main__":
     batch_size = 32  
 
 
-    data = list(load_pickle_in_batches(file_path, batch_size))  # Load entire data into a list
-    dataset = TensorDataset(torch.tensor(data))  # Convert to TensorDataset
-    loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)  # Create DataLoader
+    data = list(load_pickle_in_batches(file_path, batch_size))  
+    dataset = TensorDataset(torch.tensor(data))  
+    loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)  
 
    
     for batch in loader:
