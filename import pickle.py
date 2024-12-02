@@ -33,6 +33,6 @@ subset_data = load_subset(file_path, subset_size)
 
 if subset_data is not None:
     print(f"Loaded subset of size: {subset_size}")
-    # Proceed with your data processing or model training using subset_data
+  
 else:
     print("Failed to load subset of data")
